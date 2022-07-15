@@ -5,6 +5,7 @@ enum class MenuType {
     NoneMenu = 10,
     SubMenu = 11,
     ActionMenu = 12,
+    NavigationMenu = 13,
     MainMenu = 19
 };
 

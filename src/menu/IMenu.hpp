@@ -8,13 +8,14 @@
 using std::string;
 
 class IMenu {
+protected:
     string _menuName;
     MenuType _type;
 public:
     IMenu(const string &menuName = "None", MenuType type = MenuType::NoneMenu);
     virtual ~IMenu();
 
-    string &getMenuName();
+    const string &getMenuName();
     MenuType getMenuType();
 };
 

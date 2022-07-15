@@ -8,9 +8,15 @@ PUBLIC
 
 target_sources(stoke_menu 
 PRIVATE
-    ${CMAKE_CURRENT_LIST_DIR}/Menu.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/IMenu.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/IMenuContainer.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/MainMenu.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/MenuAction.cpp
 PUBLIC
-    ${CMAKE_CURRENT_LIST_DIR}/Menu.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/IMenu.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/IMenuContainer.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/MainMenu.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/MenuAction.hpp
 )
 
 target_include_directories(stoke_menu

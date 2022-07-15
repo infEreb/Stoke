@@ -3,9 +3,12 @@
 #include "../extern/cpp-terminal/cpp-terminal/window.hpp"
 #include <iostream>
 
+#include "./menu/MainMenu.hpp"
+
 int main() {
 
-    std::cout << "hey\n";
+    MainMenu *mainMenu = new MainMenu("MAIN", "Exit");
+    mainMenu->run(std::cin);
 
     return 0;
 }

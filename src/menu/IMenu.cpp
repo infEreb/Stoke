@@ -6,7 +6,7 @@ IMenu::IMenu(const string &menuName, MenuType type) {
 }
 IMenu::~IMenu() {}
 
-string &IMenu::getMenuName() {
+const string &IMenu::getMenuName() {
     return this->_menuName;
 }
 
