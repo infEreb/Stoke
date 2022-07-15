@@ -21,8 +21,8 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
 endif()
 
 # lists of modules
-if(NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/cpp-terminal/CMakeLists.txt"
-    OR NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/tabulate/CMakeLists.txt"
+if(#NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/cpp-terminal/CMakeLists.txt"
+    NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/tabulate/CMakeLists.txt"
 )
     message(FATAL_ERROR "The submodules were not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
