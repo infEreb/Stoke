@@ -28,7 +28,7 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/cpp-terminal/CMakeLists.txt"
 endif()
 
 # add subdirs
-add_subdirectory(extern/cpp-terminal)
+# add_subdirectory(extern/cpp-terminal)
 add_subdirectory(extern/tabulate)
 
 # end of GIT_SUBMODULES
