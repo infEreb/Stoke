@@ -1,6 +1,6 @@
 #include "MenuNavigation.hpp"
 
-MenuNavigation::MenuNavigation(const string &menuName, IMenu *nextMenu) : IMenu(menuName, MenuType::NavigationMenu), IMenuActions() {
+MenuNavigation::MenuNavigation(const string &menuName, IMenu *nextMenu) : IMenu(menuName, MenuType::MenuNavigation) {
     this->_nextMenu = nextMenu;
 }
 MenuNavigation::~MenuNavigation() {

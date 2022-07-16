@@ -11,8 +11,7 @@ using std::string;
 
 class IMenu;
 
-// implementation of menu like container 
-// for menu items
+// implementation of menu like container for menu items
 class IMenuContainer {
 protected:
     std::vector<IMenu*> _items;

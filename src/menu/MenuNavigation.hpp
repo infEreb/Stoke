@@ -3,7 +3,8 @@
 
 #include "IMenuActions.hpp"
 
-class MenuNavigation : public IMenu, public IMenuActions {
+// Menu Navidation - class for swapping menus
+class MenuNavigation : public IMenu {
     // "Jump To" pointer
     IMenu *_nextMenu;
 

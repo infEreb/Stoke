@@ -3,10 +3,10 @@
 
 enum class MenuType {
     NoneMenu = 10,
-    SubMenu = 11,
-    ActionMenu = 12,
-    NavigationMenu = 13,
-    MainMenu = 19
+    MenuAction = 11,
+    MenuNavigation = 12,
+    MenuVariant = 13,
+    MenuMain = 19
 };
 
 enum class MenuSignal {

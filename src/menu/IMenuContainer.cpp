@@ -1,7 +1,7 @@
 #include "IMenuContainer.hpp"
 
 #include "IMenu.hpp"
-#include "../../extern/tabulate/table.hpp"
+#include "../../extern/tabulate/include/tabulate/table.hpp"
 
 using namespace tabulate;
 using Row_t = Table::Row_t;
@@ -51,10 +51,13 @@ size_t IMenuContainer::getItemsCount() {
 
 const string& IMenuContainer::toString() {
     Table menu;
+
     int i = 0;
     for(auto item: this->_items) {
         menu.add_row(Row_t{std::to_string(i+1) + "." + item->getMenuName()});
-        menu.column(i).format().font_align(FontAlign::center);
+        menu.row(i).format().font_align(FontAlign::center);
+
+        i++;
     }
 
     return menu.str();
