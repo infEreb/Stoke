@@ -21,14 +21,14 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
 endif()
 
 # lists of modules
-if(#NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/cpp-terminal/CMakeLists.txt"
-    NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/tabulate/CMakeLists.txt"
+if(NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/cpp-terminal/CMakeLists.txt"
+    #NOT EXISTS "${PROJECT_SOURCE_DIR}/extern/tabulate/CMakeLists.txt"
 )
     message(FATAL_ERROR "The submodules were not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 
 # add subdirs
-# add_subdirectory(extern/cpp-terminal)
+add_subdirectory(extern/cpp-terminal)
 add_subdirectory(extern/tabulate)
 
 # end of GIT_SUBMODULES
@@ -36,8 +36,8 @@ add_subdirectory(extern/tabulate)
 
 add_subdirectory(src)
 
-#add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 
-#install(TARGETS ${PROJECT_NAME} DESTINATION bin)
-#install(FILES main.cpp DESTINATION src)
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+install(FILES main.cpp DESTINATION src)
