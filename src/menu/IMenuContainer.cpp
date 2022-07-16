@@ -1,7 +1,7 @@
 #include "IMenuContainer.hpp"
 
 #include "IMenu.hpp"
-#include "../../extern/tabulate/include/tabulate/table.hpp"
+#include "../../extern/tabulate/table.hpp"
 
 using namespace tabulate;
 using Row_t = Table::Row_t;
