@@ -2,7 +2,7 @@ add_library(tabulate "")
 
 target_sources(tabulate
 PUBLIC
-    ${}/asciidoc_exporter.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/asciidoc_exporter.hpp
     ${CMAKE_CURRENT_LIST_DIR}/cell.hpp
     ${CMAKE_CURRENT_LIST_DIR}/color.hpp
     ${CMAKE_CURRENT_LIST_DIR}/column_format.hpp
